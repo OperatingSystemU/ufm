@@ -76,6 +76,7 @@ static void on_go_back(GtkAction* act, FmMainWin* win);
 static void on_go_forward(GtkAction* act, FmMainWin* win);
 static void on_go_up(GtkAction* act, FmMainWin* win);
 static void on_go_home(GtkAction* act, FmMainWin* win);
+static void on_go_root(GtkAction* act, FmMainWin* win);
 static void on_go_desktop(GtkAction* act, FmMainWin* win);
 static void on_go_trash(GtkAction* act, FmMainWin* win);
 static void on_go_computer(GtkAction* act, FmMainWin* win);
@@ -941,6 +942,11 @@ static void on_go_up(GtkAction* act, FmMainWin* win)
 static void on_go_home(GtkAction* act, FmMainWin* win)
 {
     fm_main_win_chdir( win, fm_path_get_home());
+}
+
+static void on_go_root(GtkAction* act, FmMainWin* win)
+{
+    fm_main_win_chdir( win, fm_path_get_root());
 }
 
 static void on_go_desktop(GtkAction* act, FmMainWin* win)

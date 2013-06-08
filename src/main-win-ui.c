@@ -61,6 +61,7 @@ static const char main_menu_xml[] =
     "<menuitem action='Home'/>"
     "<menuitem action='Desktop'/>"
     "<menuitem action='Computer'/>"
+    "<menuitem action='Root'/>"
     "<menuitem action='Trash'/>"
     "<menuitem action='Network'/>"
     "<menuitem action='Apps'/>"
@@ -157,6 +158,7 @@ static GtkActionEntry main_win_actions[]=
         {"Home", "user-home", N_("H_ome Folder"), "<Alt>Home", N_("Home Folder"), G_CALLBACK(on_go_home)},
         {"Desktop", "user-desktop", N_("_Desktop"), NULL, N_("Desktop Folder"), G_CALLBACK(on_go_desktop)},
         {"Computer", "computer", N_("_My Computer"), NULL, NULL, G_CALLBACK(on_go_computer)},
+        {"Root", "drive-harddisk", N_("_Root"), NULL, NULL, G_CALLBACK(on_go_root)},
         {"Trash", "user-trash", N_("_Trash Can"), NULL, NULL, G_CALLBACK(on_go_trash)},
         {"Network", GTK_STOCK_NETWORK, N_("Net_work Drives"), NULL, NULL, G_CALLBACK(on_go_network)},
         {"Apps", "system-software-install", N_("_Applications"), NULL, N_("Installed Applications"), G_CALLBACK(on_go_apps)},
