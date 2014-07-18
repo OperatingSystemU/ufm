@@ -1,0 +1,7 @@
+TODO:
+*Filesystem hiden by default but easy access avalible through a check button in ufm that shows and hides filesystem (off by default though)
+*Bug fixes
+*Optimizations and integration with XFCE
+*Better integration of places and more emphasis on places
+*Integration and optimization with FlareGet as download manager for internet
+*add dependency to urdesktop and get rid of thunar dependency
